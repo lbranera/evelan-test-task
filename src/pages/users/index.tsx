@@ -88,7 +88,7 @@ const UsersPage = () => {
           </Table>
         </TableContainer>
 
-        <Button isDisabled={currentPage === totalPages} colorScheme='blue' onClick={loadMoreUsers}>Load more</Button>
+        <Button isDisabled={currentPage === totalPages} isLoading={isLoading} colorScheme='blue' onClick={loadMoreUsers}>Load more</Button>
       </VStack>
   );
 };
